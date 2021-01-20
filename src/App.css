@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-image:url("./img/books.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  }
+
+.Header {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(53, 6, 6);
+  color: #ffffff;
+  height: 100px;
+}
+
+.Logo {
+  display: flex;
+  padding: 2vh 2vh 2vh 0;
+} 
+
+.homepage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.SearchForm {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 60%;
+  font-weight: bold;
+  padding: 4px 12px; 
+  margin: 20px;
+  width: 50%; 
+  cursor: text;
+}
+
+.Form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchButton {
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: -2px 0 #0a0a0c, 0 2px #0a0a0c, 2px 0 #0a0a0c, 0 -2px #0a0a0c;
+  padding: 6px 12px; 
+  background: rgb(95, 5, 11, 0.9);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 3vh;
+  margin: 4px;
+}
+
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+  width: 60vh;
+  padding: 6px 12px; 
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.Books-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  padding: 20px;
+  padding-bottom: 100px; 
+}
+
+.BooksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  margin-bottom: 12px;
+  height: 70vh;
+  margin: 60px;
+  color: white;
+  background-color: rgb(53, 6, 6,0.8);
+  text-shadow: -1px 0 #0a0a0c, 0 1px #0a0a0c, 1px 0 #0a0a0c, 0 -1px #0a0a0c;
+}
+
+.BooksList img{
+  border : 3px solid white;
+}
+
+.Link {
+  font-size: 4vh;
+  color:white;
+  font-weight: bold;
+}
+
+.BooksCard{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+
+.BookCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  margin-bottom: 12px;
+  height: 70vh;
+  margin: 10px;
+  color: white;
+  background-color: rgb(53, 6, 6,0.8);
+  text-shadow: -1px 0 #0a0a0c, 0 1px #0a0a0c, 1px 0 #0a0a0c, 0 -1px #0a0a0c;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.BookCard img{
+  border: 3px solid  #ffffff;
+  padding-bottom: 20px;
+}
+
+.BooksDetail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  margin-bottom: 12px;
+  height: 40vh;
+  margin: 10px;
+  color: white;
+  background-color: rgb(53, 6, 6, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: -1px 0 #0a0a0c, 0 1px #0a0a0c, 1px 0 #0a0a0c, 0 -1px #0a0a0c;
+}
+
+.Back{
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: -2px 0 #0a0a0c, 0 2px #0a0a0c, 2px 0 #0a0a0c, 0 -2px #0a0a0c;
+  padding: 6px 12px; 
+  background: rgb(95, 5, 11, 0.9);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 3vh;
+  margin: 4px;
+  border: 1px solid white;
+}
+
+.Endbar {
+  left: 0;
+  height:100px;
+  position:absolute;
+  bottom: 0;
+  height: 60px;
+  padding: 10px;
+  width: 100%;
+  padding: 1vh;
+  color: whitesmoke;
+  text-shadow: -1px 0 #0a0a0c, 0 1px #0a0a0c, 1px 0 #0a0a0c, 0 -1px #0a0a0c;
+  background-color: rgb(53, 6, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .Books-container{
+    width: 600px;
+  }
+
+  .BooksList{
+    font-size: 10px;
+    width: 300px;
+    height: 500px;
+  }
+
+  .SearchBar{
+    width: 30vh;
+  }
+
+  .BooksCard{
+    font-size: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .BookCard{
+    font-size: 10px;
+    width: 90%;
+    height: 500px;
+  }
+  .BooksDetail{
+    font-size: 10px;
+    width: 90%;
+    padding-bottom: 60px;
+    height: 400px;
+  }
+
+}
